@@ -1,0 +1,14 @@
+body {
+  background: black;
+}
+.navbar {
+  margin: 5% 0%;
+}
+.btn {
+  margin: 10px;
+}
+.jumbotron {
+  margin: 15% 0% 0% 0%;
+  height: 500px;
+  background: url(https://unsplash.com/?photo=BiyVuXGiF7s);
+}
