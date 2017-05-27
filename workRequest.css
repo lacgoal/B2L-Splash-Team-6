@@ -30,6 +30,35 @@ li {
 				 0px 8px 13px rgba(0, 0, 0, 0.1),
 				 0px 18px 23px rgba(0, 0, 0, 0.1);
 }
+
+
+progress {
+	width: 100%;
+	height: 20px;
+	margin: 50px auto;
+	display: block;
+	-webkit-appearance: none;
+	border: none;
+}
+progress::-webkit-progress-bar {
+	background: black;
+	border-radius: 50px;
+	padding: 2px;
+	box-shadow: 0 1px 0px 0 rgba(255, 255, 255, 0.2);
+}
+progress::-webkit-progress-value {
+	border-radius: 50px;
+	box-shadow: inset 0 1px 1px 0 rgba(255, 255, 255, 0.4);
+	background:
+		-webkit-linear-gradient(45deg, transparent, transparent 33%, rgba(0, 0, 0, 0.1) 33%, rgba(0, 0, 0, 0.1) 66%, transparent 66%),
+		-webkit-linear-gradient(top, rgba(255, 255, 255, 0.25), rgba(0, 0, 0, 0.2)),
+		-webkit-linear-gradient(left, #ba7448, #c4672d);
+	background-size: 25px 14px, 100% 100%, 100% 100%;
+	-webkit-animation: move 5s linear 0 infinite;
+}
+
+
+/*css for star rating section*/
 .rating {
     overflow: hidden;
     display: inline-block;
@@ -58,15 +87,29 @@ li {
     height: 16px;
     background: url('http://kubyshkin.ru/samples/star-rating/star.png') 0 -16px;
 }
+
 .prevReqTitle {
+		font-weight: bold;
 		color: black;
-    outline: black solid thick;
+    outline: black solid thin;
 		background-color: white;
+
 }
 .prevReq {
 		color: black;
     outline: black solid thin;
 		background-color: white;
+}
+
+.statusBox {
+  background: red;
+	height: 30%;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+.form-group {
+	color: black;
 }
 /* Just for the demo */
 body {
